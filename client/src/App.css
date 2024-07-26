@@ -1,0 +1,41 @@
+.headerBox {
+	display: flex;
+	padding: 7px;
+	background-color: #1976d2;
+	height: 100%;
+}
+.logo {
+	font-size: 24px;
+	/* font-weight: bold; */
+	color: white;
+	cursor: default;
+	width: 50%;
+	padding-top: 5px;
+	padding-right: 20px;
+}
+.navButton {
+	color: white;
+	font-size: large;
+}
+.navButton:hover {
+	cursor: pointer;
+	padding-left: 20px;
+	transition: ease-in-out;
+}
+
+.myhtml {
+	display: grid;
+	grid-template-rows: 7% 93%; /* 40% width for the header, 60% for the content */
+	height: 100vh; /* Full viewport height */
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+.main-header {
+	grid-row: 1; /* Places the header in the first column */
+	overflow-y: hidden; /* Makes the header scrollable if content overflows */
+}
+
+.main-content {
+	grid-row: 2; /* Places the content in the second column */
+	overflow: hidden;
+}
